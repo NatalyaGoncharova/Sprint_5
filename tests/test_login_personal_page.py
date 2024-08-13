@@ -10,7 +10,7 @@ def driver():
     yield driver
     driver.quit()
 
-def test_login_with_account_button(driver):
+def test_login_from_personal_page(driver):
     driver.get("https://stellarburgers.nomoreparties.site/")
 
     driver.find_element(*PROFILE_ELEMENT).click()

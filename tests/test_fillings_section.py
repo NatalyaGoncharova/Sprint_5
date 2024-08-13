@@ -11,7 +11,7 @@ def driver():
     yield driver
     driver.quit()
 
-def test_buns_section(driver):
+def test_fillings_section_visibitity(driver):
     driver.get("https://stellarburgers.nomoreparties.site/")
 
     section_fillings = driver.find_element(*SECTION_FILLINGS)
