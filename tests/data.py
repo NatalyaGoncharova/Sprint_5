@@ -1,0 +1,7 @@
+BASE_URL = "https://stellarburgers.nomoreparties.site/"
+LOGIN_URL = f"{BASE_URL}login"
+REGISTRATE_URL = f"{BASE_URL}register"
+ACCOUNT_URL = f"{BASE_URL}account"
+RESSET_URL = f"{BASE_URL}forgot-password"
+EMAIL = "natalya_goncharova_12@yandex.ru"
+PASSWORD = "test123"
