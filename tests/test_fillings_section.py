@@ -1,18 +1,11 @@
-import pytest
-from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from locators import *
+from data import *
 
-@pytest.fixture
-def driver():
-    driver = webdriver.Chrome()
-    driver.implicitly_wait(10)
-    yield driver
-    driver.quit()
 
 def test_fillings_section_visibitity(driver):
-    driver.get("https://stellarburgers.nomoreparties.site/")
+    driver.get(BASE_URL)
 
     section_fillings = driver.find_element(*SECTION_FILLINGS)
     driver.execute_script("arguments[0].scrollIntoView(true);", section_fillings)
